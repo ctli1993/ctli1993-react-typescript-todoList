@@ -1,0 +1,8 @@
+{
+  "name": "react-typescript-todoList",
+  "version": "1.0.0",
+  "description": "A fun todo list built with React, Redux, and TypeScript",
+  "main": "index.js",
+  "author": "Aaron Li",
+  "license": "MIT"
+}
