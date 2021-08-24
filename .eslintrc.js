@@ -4,6 +4,7 @@ module.exports = {
     parserOptions: {
       ecmaVersion: 2020,
       sourceType: "module",
+      project: "./tsconfig.json",
     },
     plugins: ["@typescript-eslint"],
     extends: [
@@ -12,9 +13,6 @@ module.exports = {
       "plugin:@typescript-eslint/recommended",
       "airbnb-typescript",
     ],
-    parserOptions: {
-      project: "./tsconfig.json",
-    },
     rules: {
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": ["error"],
