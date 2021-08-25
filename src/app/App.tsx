@@ -1,12 +1,9 @@
 import Routes from "../routes";
-import getQuoteApi from "../api/quoteAPI";
+import { getInspiration, getInspirationByType } from "../api/inspirationAPI";
 
 export default function App() {
-  getQuoteApi().then((result) => console.log(result));
+  getInspiration().then((result) => console.log(result));
+  getInspirationByType("recreational").then((result) => console.log(result));
 
-  return (
-    <div>
-      <Routes />
-    </div>
-  );
+  return <Routes />;
 }
