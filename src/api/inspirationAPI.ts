@@ -1,4 +1,4 @@
-import fetchData from "../common/dataFetcher";
+import fetchData from "../common/handlers/dataFetcher";
 
 interface InspirationDetails {
   activity: string;
@@ -9,20 +9,12 @@ interface InspirationDetails {
   key: string;
 }
 
-export const getInspiration = async () => {
-  const inspiration = await fetchData<InspirationDetails>({
-    url: "/",
-    method: "get",
-  });
-
-  return inspiration;
-};
-
 export const getInspirationByType = async (type: string) => {
+  const url = type === "random" ? "/" : `?type=${type}`;
   const inspirationByType = await fetchData<InspirationDetails>({
-    url: `?type=${type}`,
+    url,
     method: "get",
   });
 
-  return inspirationByType;
+  return inspirationByType.activity;
 };
