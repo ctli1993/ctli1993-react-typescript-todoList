@@ -2,9 +2,11 @@
 
 ## Project Introduction
 
-This is a fun to-do app built with React, Redux, and TypeScript. Feel free to check it out here:
+This is a fun to-do app built with React, Redux, and TypeScript. Feel free to download and check it :)
 
 In addition to the basic CRUD operations a normal to-do app provides, this fun to-do app have a "get inspiration" page. Thus, if you don't know what to do (or what to put on your to-do list), you can navigate to the "get inspiration" page. By simply clicking a button, the app would generate a random thing for you to do.
+
+<div style="width:100%;height:0;padding-bottom:57%;position:relative;"><iframe src="https://giphy.com/embed/pTrHmy4rLle4eFMM4d" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/pTrHmy4rLle4eFMM4d">via GIPHY</a></p>
 
 Additional tech/tools I use in this project include
 
