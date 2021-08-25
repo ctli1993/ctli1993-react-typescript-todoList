@@ -1,11 +1,14 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { v4 as uuidv4 } from "uuid";
 
 interface TodoProps {
   id: string;
   text: string;
   completed: boolean;
 }
-const initialState = [] as TodoProps[];
+const initialState = [
+  { id: uuidv4(), text: "get inspirations", completed: false },
+] as TodoProps[];
 
 export const todoSlice = createSlice({
   name: "todo",

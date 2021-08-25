@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import Header from "../common/components/Header";
 import Routes from "../routes";
 import theme from "../styles/global-theme-variable";
+import GlobalStyle from "../styles/GlobalStyle";
 import { store } from "./store";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Provider store={store}>
         <Header />
         <Routes />
+        <GlobalStyle />
       </Provider>
     </ThemeProvider>
   );
