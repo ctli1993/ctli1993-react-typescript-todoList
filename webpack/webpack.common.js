@@ -19,9 +19,9 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/i,                                                                                                                                                             
-        use: ["style-loader", "css-loader", "sass-loader"],                                                                                                                          
-      },  
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
       {
         test: /\.(s(a|c)ss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
@@ -45,4 +45,7 @@ module.exports = {
       template: path.resolve(__dirname, "..", "./src/index.html"), // 將 bundle.js 注入到 index.html
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };
